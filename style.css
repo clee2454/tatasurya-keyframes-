@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 300vh;
+    /* min-width: 300vh; */
+}
+
+ @keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ @keyframes revol{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ 
+ 
+ @keyframes myanimation2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+   
+/* .garis{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: white;
+    background-color: salmon;
+} */
+
+/* moon */
+.moonrevol{
+    /* background-color: blue; */
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    animation: revol;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.moon{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    /* background-color: blue; */
+    border-radius: 50%;
+    top: 0;
+    right: 50%;
+    background-image: url(assets/moon2.jpeg);
+    background-size: cover;
+     
+}
+
+/* earth */
+.earthrevol{
+    /* background-color: blue; */
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 800px;
+    height: 800px;
+    animation: revol ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    /* top: 18vh;
+    left: 35%; */
+}
+.earth {
+    animation: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/earth3.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 45px;
+    left: 45px;
+}
+
+/* sun */
+.sun{
+    animation: rotation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    /* left: 40%; */
+    border-radius: 50%;
+    /* top: 30vh; */
+    /* background-color: #cdcdcd; */
+    background-image: url(assets/suncropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Mercury */
+.mercuryrevol{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    animation: revol  ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.mercury{
+    animation: rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/mercury.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    top: 25px;
+    left: 25px;
+}
+
+/* venus */
+.venusrevol{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    animation: revol  ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.venus{
+    animation: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/venus.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    top: 35px;
+    left: 35px;
+}
+
+/* mars */
+.marsrevol{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 1050px;
+    height: 1050px;
+    animation: revol  ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.mars{
+    animation: rotation;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    height:7.5%;
+    width: 7.5%;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/mars.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    top: 11%;
+    left: 11%;
+}
+
+/* jupiter */
+.jupiterrevol{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 1350px;
+    height: 1350px;
+    animation: revol  ;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.jupiter{
+    animation: rotation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/jupiter.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    top: 8%;
+    left: 8%;
+}
+.saturnrevol{
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 1700px;
+    height: 1700px;
+    animation: revol  ;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+.saturn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(assets/saturn.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    top: 10%;
+    left: 10%;
+    /* z-index: 5; */
+}
+
+.saturnring1{
+    position: absolute;
+    border-width: 30px;
+    border-style: solid;
+    border-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    transform: rotateX(75deg);
+    
+}
+
+
+
